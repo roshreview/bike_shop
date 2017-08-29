@@ -1,7 +1,5 @@
 FactoryGirl.define do
-  factory :bike do
+  factory :frame do
     size 2
-
-    bike
   end
 end

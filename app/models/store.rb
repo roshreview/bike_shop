@@ -1,6 +1,6 @@
 class Store < ActiveRecord::Base
   has_many :employees
-  has many :managers
-  has many :bikes
-  has many :customers
+  has_many :managers
+  has_many :bikes
+  has_many :customers
 end
