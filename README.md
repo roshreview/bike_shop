@@ -1,6 +1,6 @@
 # Interview Assignment
 
-Factories used for testing are notoriously known to be potentially slow due to dependent associations. Designing factories with unnecessary associations causes excessive object creation, which can in turn can cause test performance issues. For this assignment, we are interested in analyzing our factories and determining how many other records a single factory creates.
+Factories used for testing are notoriously known to be potentially slow due to dependent associations. Designing factories with unnecessary associations causes excessive object creation, which in turn can cause test performance issues. For this assignment, we are interested in analyzing our factories and determining how many other records a single factory creates.
 
 For our factories, we use the gem [FactoryGirl](https://github.com/thoughtbot/factory_girl).
 
