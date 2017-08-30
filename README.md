@@ -1,4 +1,4 @@
-#Interview Assignment
+# Interview Assignment
 
 Factories used for testing are notoriously known to be potentially slow due to dependent associations. Designing factories with unnecessary associations causes excessive object creation, which can in turn can cause test performance issues. For this assignment, we are interested in analyzing our factories and determining how many other records a single factory creates.
 
@@ -6,7 +6,7 @@ For our factories, we use the gem [FactoryGirl](https://github.com/thoughtbot/fa
 
 All of the factories are defined in the `spec/factories/` directory. We would like some way to see exactly how many and what kinds of records are created and saved to the database when we create a specific factory via `FactoryGirl.create(<factory>)`.
 
-###Here is an example:
+### Here is an example:
 
 ```
 $ FactoryGirl.counter(Bike)
