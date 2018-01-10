@@ -1,5 +1,7 @@
 # Interview Assignment
 
+## Part 1:
+
 Factories used for testing are notoriously known to be potentially slow due to dependent associations. Designing factories with unnecessary associations causes excessive object creation, which in turn can cause test performance issues. For this assignment, we are interested in analyzing our factories and determining how many other records a single factory creates.
 
 For our factories, we use the gem [FactoryGirl](https://github.com/thoughtbot/factory_girl).
@@ -24,7 +26,26 @@ In this case, creating a single `Bike` via `FactoryGirl.create(:bike)` ends up c
 
 Please note that your solution does not need to follow the pattern shown in example above.
 
-Please implement your solution however you see fit and write RSpec tests to verify the correctness of your solution. To submit, duplicate the repo into a private repository and add Anthony (Github handle: anthonyto) or email Anthony your solution files.
+Please implement your solution however you see fit and write RSpec tests to verify the correctness of your solution.
+
+## Part 2:
+
+Report all the full database queries/statements are executed for a single call to `create` for a given factory. 
+
+### Example:
+
+```
+$ FactoryGirl.sql_analyzer(Bike)
+
+[
+ "INSERT INTO BIKES (SERIAL_NUMBER, STORE_ID) VALUES (123, 5);",
+ "INSERT INTO ACCESSORIES (DESCRIPTION, BIKE_ID) VALUES ('foo', 1);"
+]
+```
+
+Again, this is just an example. Your solution can follor whatever form you'd like. Please remember to fully test your solution.
+
+To submit, duplicate the repo into a private repository and add Anthony (Github handle: anthonyto) or email Anthony your solution files.
 
 Kindly refrain from opening a public PR or a public fork so your solution is not publicized. Feel free to reach out to Anthony with any questions or comments.
 
