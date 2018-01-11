@@ -30,7 +30,7 @@ Please implement your solution however you see fit and write RSpec tests to veri
 
 ## Part 2:
 
-Report all the full database queries/statements are executed for a single call to `create` for a given factory. 
+Report all the full database queries/statements that are executed for a single call to `create` for a given factory. 
 
 ### Example:
 
@@ -43,7 +43,7 @@ $ FactoryGirl.sql_analyzer(Bike)
 ]
 ```
 
-Again, this is just an example. Your solution can follor whatever form you'd like. Please remember to fully test your solution.
+Again, this is just an example. Your solution can follow whatever form you'd like. Please remember to fully test your solution.
 
 To submit, duplicate the repo into a private repository and add Anthony (Github handle: anthonyto) or email Anthony your solution files.
 
