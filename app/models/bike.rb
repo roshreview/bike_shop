@@ -1,5 +1,5 @@
 class Bike < ActiveRecord::Base
-  has_many :stores
+  belongs_to :store
   has_many :wheels
   has_many :gears
   has_many :accessories
