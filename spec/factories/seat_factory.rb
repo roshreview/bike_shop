@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :seat do
     size 2
     material 'leather'

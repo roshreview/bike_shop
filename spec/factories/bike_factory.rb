@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :bike do
     sequence(:serial_number) { |n| "bike #{n}" }
 
