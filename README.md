@@ -1,5 +1,8 @@
 # Interview Assignment
 
+## Note:
+This application does not work with Ruby 2.4. The latest known working version is Ruby 2.3.3
+
 ## Part 1:
 
 Factories used for testing are notoriously known to be potentially slow due to dependent associations. Designing factories with unnecessary associations causes excessive object creation, which in turn can cause test performance issues. For this assignment, we are interested in analyzing our factories and determining how many other records a single factory creates.
